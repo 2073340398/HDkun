@@ -1,0 +1,53 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>123</title>
+        <style type="text/css">
+        *
+{
+  margin: 0;
+  padding: 0;
+}
+   
+html, body, form
+{
+  height: 100%;
+}
+   
+.Wrapper
+{
+  min-height: 100%;
+}
+   .Wrapper .Header{
+       background: #ddff33;
+   }
+   .Wrapper .Content{
+       background: #4c35cf;
+   }
+  .Wrapper .FooterPush
+  {
+    background: #44ffdd;
+    height: 120px; /* Footer 的高度 */
+  }
+   
+.Footer
+{
+  background: #343443;
+  clear: both; /* 清除浮动元素格式 */
+  position: relative;
+  margin-top: -120px; /* Footer 高度的负值 */
+  height: 120px;
+}
+        </style>
+    </head>
+    <body>
+        <form> <!-- 如果用的是 Asp.Net 就可能会有这个结点 -->
+          <div class="Wrapper">
+            <div class="Header" ></div>
+            <div class="Content" ></div>
+            <div class="FooterPush" ></div>
+          </div>
+          <div class="Footer"></div>
+        </form>
+        </body>
+</html>

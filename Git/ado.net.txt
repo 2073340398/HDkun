@@ -1,0 +1,21 @@
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\config\machine.config
+
+Command的几个常用方法 
+ExecuteNonQuery：返回被SQL语句执行影响的行数（int），主要执行增删改操作。 
+ExecuteReader：执行SQL或存储过程，返回的是SqlDataReader类型，主要用来查询。 
+ExecuteScalar：返回执行结果集中的第一行第一列，如果没有数据，则返回NULL。
+
+
+SqlDataReader常用方法
+GetOrdinal：可以获取指定列名的序列号，int name = dr.GetOrdinal(“name”);
+GetName：与上面的方法对应，可以通过列号返回列名字。
+IsDBNull：判断当前读取的数据是否为Null。
+NextResult：当查询为批处理查询时，使用这个方法去获取下一个结果集，返回值为Bool，如果存在多个结果集，则为true；否则为false。
+Read：读取数据。
+常用属性有：
+HasRow：判断是否有数据。
+FieldCount：获取读取的列数。
+IsClosed：判断读取的数据流是否关闭。
+
+DataAdapter常与dataset、datatable一起使用 
+Fill
